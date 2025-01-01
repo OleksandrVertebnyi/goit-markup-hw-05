@@ -739,7 +739,7 @@ color: #ffffff;
 
 /* Modal##################################### */
 
-.backdrop {
+.backdrop .is-open {
   position: fixed;
   width: 100%;
   height: 100%;
@@ -757,8 +757,8 @@ color: #ffffff;
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
- 
 }
+ 
 .modal {
   position: absolute;
   top: 50%;
