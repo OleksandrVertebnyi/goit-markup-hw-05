@@ -13,7 +13,7 @@ body {
   margin-right: auto;
   padding-left: 16px;
   padding-right: 16px;
-  max-width: 1440px;
+  width: 1440px;
 }
 
 h1,
@@ -41,7 +41,8 @@ a {
 }
 .container {
   /* max-width: 1158px; */
-  
+  width: 1158px;
+  margin: 0 auto;
   padding: 0 15px;
 }
 
@@ -746,9 +747,7 @@ color: #ffffff;
   left: 0;
   background-color: rgba(46, 47, 66, 0.4);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
+  
 }
   
   
@@ -770,7 +769,7 @@ color: #ffffff;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
   background-color: #fcfcfc;
   transform: translate(-50%, -50%);
-  padding: 24px;
+  
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
    padding: 72px 24px 24px; 
 }
@@ -960,7 +959,8 @@ color: #ffffff;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
    
    }
    
@@ -968,7 +968,7 @@ color: #ffffff;
   
   
 .person_check_container {
-  display: block;
+  
   margin-bottom: 24px;
 }
   
@@ -1014,11 +1014,7 @@ color: #4d5ae5;
   background-color: rgb(64, 75, 191);
 
 }
-.click_check {
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  display: inline-flex;
 
-}
 
 .button_send {
   
@@ -1041,6 +1037,7 @@ color: #4d5ae5;
   background-color: #4D5AE5;
    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
+
  .button_send:hover {
   background-color: #404BBF;
  }
