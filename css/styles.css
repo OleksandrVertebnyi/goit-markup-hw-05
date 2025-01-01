@@ -41,8 +41,7 @@ a {
 }
 .container {
   /* max-width: 1158px; */
-  width: 1158px;
-  margin: 0 auto;
+  
   padding: 0 15px;
 }
 
@@ -759,7 +758,7 @@ color: #ffffff;
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
-  width: 100%;
+ 
 }
 .modal {
   position: absolute;
@@ -846,7 +845,7 @@ color: #ffffff;
 }
 
 
-  .label_modal span {
+  .label_modal .coment_text {
     display: block;
     margin-bottom: 8px;
     /* Small Text */
