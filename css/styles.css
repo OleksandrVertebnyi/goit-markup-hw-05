@@ -746,14 +746,14 @@ color: #ffffff;
   top: 0;
   left: 0;
   background-color: rgba(46, 47, 66, 0.4);
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1)
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   /* display: flex;
   align-items: center;
   justify-content: center; */
 }
+  
+  
+  
 
 .is-open {
   opacity: 1;
@@ -787,7 +787,7 @@ color: #ffffff;
   border-radius: 50%;
   box-sizing: border-box;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  /* CORNFLOWER */
+  
   background: rgb(231, 233, 252);  
   
   display: flex;
@@ -795,7 +795,7 @@ color: #ffffff;
   justify-content: center;
   padding: 0;
   cursor: pointer;
-  transition:  border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close_modal:hover {
@@ -894,30 +894,31 @@ color: #ffffff;
   top: 50%;
   left: 16px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  width: 18px;
-  height: 24px;
   transform: translateY(-50%); 
+}
+  
   
    
     
-}
   
-.input_icons_modal:focus-visible {
+.input_modal:focus + .person_icon {
+  fill: #4D5AE5;
+}
 
-     fill: #4D5AE5;
-  }
   .input_icons_modal {
     position: relative;
   }
 
 .person_icon_container {
-  
+  display: block;
   margin-bottom: 8px;
+  
   
 }
 
-.person_coment_container {
-margin-bottom: 16px;
+.person_text_container {
+  display: block;
+  margin-bottom: 16px;
 }
 
 .comment_text {
@@ -965,13 +966,14 @@ margin-bottom: 16px;
    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   
-  .icon-click {
-     line-height: 1.17;
-  }
+  
   
 .person_check_container {
+  display: block;
   margin-bottom: 24px;
 }
+  
+  
 
 
 
@@ -982,6 +984,7 @@ font-family: "Roboto", sans-serif;
 font-weight: 400;
 font-size: 12px;
  line-height: 1.17; 
+ 
 /* line-height: 14px; */ 
 
 letter-spacing: 0.04em;
@@ -998,18 +1001,18 @@ text-decoration-skip-ink: none;
 color: #4d5ae5;
 
 }
-.modal_check {
+.visually-hidden {
   visibility: hidden;
 }
 
-.modal_check:checked ~ .text_check .click_check {
+.visually-hidden:checked ~ .text_check .click_check {
   box-sizing: border-box;
   border: none;
   border-radius: 2px;
 fill: #F4F4FD;;
 background-color: rgb(64, 75, 191);
-transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+display: inline-flex;
 
 }
 
@@ -1019,7 +1022,7 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: block;
   border: none;
   margin: auto;
-  margin-top: 24px;
+  
   margin-bottom: 24px;
   cursor: pointer;
   border-radius: 4px;
