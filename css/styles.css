@@ -739,9 +739,9 @@ color: #ffffff;
 
 /* Modal##################################### */
 
- .backdrop  {
+ .backdrop_div  {
   position: fixed;
-  width: 100%;height: 100%;
+  width: 100%;height: 100%;width: 100%;
   top: 0;
   left: 0;
   background-color: rgba(46, 47, 66, 0.4);
@@ -757,6 +757,7 @@ color: #ffffff;
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
+
 }
  
 .modal {
@@ -977,7 +978,7 @@ color: #ffffff;
 
 
 .text_check {
-
+display: inline-flex;
 display: flex;
 align-items: center;
 font-family: "Roboto", sans-serif;
