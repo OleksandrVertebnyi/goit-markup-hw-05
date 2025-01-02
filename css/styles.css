@@ -822,7 +822,7 @@ img {
 }
 
 .text_check {
-  display: flex;
+  
   align-items: center;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
